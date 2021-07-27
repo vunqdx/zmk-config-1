@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:2.4
+      image: zmkfirmware/zmk-build-arm:2.5
     name: Build
     steps:
       - name: Checkout
@@ -33,29 +33,29 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (Dactyl Stabilized Left)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=dactyl-stabilized_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Dactyl Stabilized DTS File
+      - name: West Build (Dactyl Left)
+        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=dactyl_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Dactyl DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
-      - name: Dactyl Stabilized Left Kconfig file
+        run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
+      - name: Dactyl Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 dactyl-stabilized_left_nice_nano.uf2
-      - name: Archive (Dactyl Stabilized Left)
+        run: cp build/zephyr/zmk.uf2 dactyl_left_nice_nano_v2.uf2
+      - name: Archive (Dactyl Left)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: dactyl-stabilized_left_nice_nano.uf2
-      - name: West Build (Dactyl Stabilized Right)
-        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=dactyl-stabilized_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+          path: dactyl_left_nice_nano_v2.uf2
+      - name: West Build (dactyl Right)
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=dactyl_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
-      - name: Dactyl Stabilized Right Kconfig file
+      - name: dactyl Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 dactyl-stabilized_right_nice_nano.uf2
-      - name: Archive (Dactyl Stabilized Right)
+        run: cp build/zephyr/zmk.uf2 dactyl_right_nice_nano_v2.uf2
+      - name: Archive (dactyl Right)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: dactyl-stabilized_right_nice_nano.uf2
+          path: dactyl_right_nice_nano_v2.uf2

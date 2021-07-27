@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "dactyl-stabilized.dtsi"
+#include "dactyl.dtsi"
 
 &kscan0 {
 	col-gpios
