@@ -23,9 +23,9 @@
 &kp TAB    &kp Q  &kp W    &kp E    &kp R     &kp T              &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSLH
 &kp CAPS   &kp A  &kp S    &kp D    &kp F     &kp G              &kp H     &kp J     &kp K     &kp L     &lt MDIA SEMI  &kp APOS
 &mt LSHFT LPAR  &kp Z  &kp X    &kp C    &kp V     &kp B              &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &mt RSHFT RPAR
-                  &kp LCTL &kp LEFT &kp RIGHT                              &kp DOWN  &kp UP    &kp LBKT
+                  &kp LCTRL &kp LEFT &kp RIGHT                              &kp DOWN  &kp UP    &kp LBKT
 
-                                    &kp LCTL  &kp BSPC           &kp LALT  &kp ESC
+                                    &kp LCTRL &kp BSPC           &kp LALT  &kp ESC
                            &kp LALT &kp LCMD  &mo SYMB           &kp PG_UP &kp RET   &kp SPACE
                                               &lt FN CAPS        &kp PG_DN
             >;
@@ -35,7 +35,7 @@
             bindings = <
 &trans    &trans    &kp Q     &kp W     &kp E     &kp R          &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &kp LSHFT &kp A     &kp S     &kp D     &kp F          &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &kp LCTL  &kp Z     &kp X     &kp C     &kp V          &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &kp LCTRL &kp Z     &kp X     &kp C     &kp V          &trans    &trans    &trans    &trans    &trans    &trans
                     &trans    &trans    &trans                             &trans    &trans    &trans
 
                                         &trans    &trans         &trans    &trans
@@ -46,7 +46,7 @@
 
         symbol_layer {
             bindings = <
-&trans    &trans    &kp GRAVE &kp MINUS &kp EQUAL &trans          &kp LBRK  &kp N7    &kp N8    &kp N9    &kp RBRK     &trans
+&trans    &trans    &kp GRAVE &kp MINUS &kp EQUAL &trans          &kp LBKT  &kp N7    &kp N8    &kp N9    &kp RBKT     &trans
 &trans    &trans    &trans    &trans    &trans    &trans          &kp N0    &kp N4    &kp N5    &kp N6    &kp ASTERISK &trans
 &trans    &trans    &trans    &trans    &trans    &trans          &trans    &kp N1    &kp N2    &kp N3    &trans       &trans
                     &trans    &trans    &trans                              &kp N0    &kp DOT   &trans
@@ -59,7 +59,7 @@
 
         media_layer {
             bindings = <
-&reset    &trans    &trans    &tog FPS  &trans    &trans          &kp LCMD(LBRK)    &kp LCMD(LSHFT(LBRK))    &kp LCMD(LSHFT(RBRK))   &kp LCMD(RBKT)    &trans    &trans
+&reset    &trans    &trans    &tog FPS  &trans    &trans          &kp LCMD(LBKT)    &kp LCMD(LSHFT(LBKT))    &kp LCMD(LSHFT(RBKT))   &kp LCMD(RBKT)    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans          &kp F8    &kp F9    &kp F7    &kp LALT(LCMD(GRAVE)) &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans          &trans    &trans    &trans    &trans    &trans    &trans
                     &trans    &trans    &trans                              &kp C_VOL_DN    &kp C_VOL_UP    &kp K_MUTE
