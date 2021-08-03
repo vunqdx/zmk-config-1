@@ -59,8 +59,8 @@
 
         media_layer {
             bindings = <
-&reset    &trans    &trans    &tog FPS  &trans    &trans          &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans          &kp F8    &kp F9    &kp F7    &kp LALT(LCMD(GRAVE)) &trans    &trans
+&reset    &trans    &trans    &tog FPS  &trans    &trans          &kp LG(LBKT)    &kp LG(LS(LBKT))    &kp LG(LS(RBKT))   &kp LG(RBKT)    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans          &kp F8    &kp F9    &kp F7    &kp LA(LG(GRAVE)) &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans          &trans    &trans    &trans    &trans    &trans    &trans
                     &trans    &trans    &trans                              &kp C_VOL_DN    &kp C_VOL_UP    &kp K_MUTE
 
