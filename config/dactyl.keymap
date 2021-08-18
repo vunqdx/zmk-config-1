@@ -37,7 +37,7 @@
                          &kp LCTRL  &kp LEFT  &kp RIGHT                                   &kp DOWN     &kp UP  &kp LBKT
                                               &kp LCTRL    &kp BSPC             &kp RALT   &kp ESC
                                     &kp LALT   &kp LCMD       &mo 2            &kp PG_UP   &kp RET  &kp SPACE
-                                                         &lt 4 CAPS            &kp PG_D
+                                                         &lt 4 CAPS            &kp PG_DN
             >;
         };
 
@@ -49,7 +49,7 @@
                     &trans  &trans     &trans                            &trans  &trans  &trans
                                        &trans  &trans            &trans  &trans
                             &trans  &kp SPACE  &trans            &trans  &trans  &trans
-                                               &trans            &tran
+                                               &trans            &trans
             >;
         };
 
@@ -61,7 +61,7 @@
                     &trans     &trans     &trans                                 &kp N0  &kp DOT  &trans
                                           &trans   &kp LCMD              &trans  &trans
                                &trans     &trans     &trans              &trans  &trans   &trans
-                                                  &kp LSHFT              &tran
+                                                  &kp LSHFT              &trans
             >;
         };
 
@@ -73,7 +73,7 @@
                  &trans  &trans  &trans                                      &kp C_VOL_DN      &kp C_VOL_UP         &kp K_MUTE
                                  &trans  &trans                  &trans            &trans
                          &trans  &trans  &trans                  &trans            &trans            &trans
-                                         &trans                  &tran
+                                         &trans                  &trans
             >;
         };
 
@@ -85,7 +85,7 @@
                            &trans  &trans  &trans                            &trans  &trans  &trans
                                            &trans  &trans            &trans  &trans
                                    &trans  &trans  &trans            &trans  &trans  &trans
-                                                   &trans            &tran
+                                                   &trans            &trans
             >;
         };
 
