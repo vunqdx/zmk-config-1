@@ -2,6 +2,13 @@
   "keyboard": "handwired/dactyl_reduced",
   "keymap": "default",
   "layout": "LAYOUT",
+  "layer_names": [
+    "base",
+    "fps",
+    "numpad",
+    "media",
+    "fn"
+  ],
   "layers": [
     [
               "&kp TAB",  "&kp Q",     "&kp W",    "&kp E",     "&kp R",      "&kp T",               "&kp Y",    "&kp U",     "&kp I",    "&kp O",      "&kp P",       "&kp BSLH",
